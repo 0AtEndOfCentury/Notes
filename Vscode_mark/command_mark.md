@@ -1,5 +1,8 @@
 [TOC]
 #### 字体
+```markdown
+**加粗**   *斜体*  ~~删除线~~   ==高亮==
+```
 **重点加粗**$\quad$*斜体*$\quad$~~删除线~~$\quad$==高亮==
 选中文字按ctrl+B粗体,ctrl+I斜体
 #### 列表
@@ -44,10 +47,13 @@ int function(int a,int b){
 使用网址：
 ```markdown
 [超链接名](超链接地址) eg: [b站网址](https://www.bilibili.com/)
-![图片名](图片地址) eg: ![赛罗](https://mvideopic.bdstatic.com/mvideo/25e97b57502b55996590d0156bbe03f5.jpg?for=bg)
+![图片名](图片地址) eg: 
+![赛罗](https://mvideopic.bdstatic.com/mvideo/25e97b57502b55996590d0156bbe03f5.jpg?for=bg)
 ```
 [b站网址](https://www.bilibili.com/)
-![赛罗](images/2022-04-23-16-15-37.png)
+<div align=center>
+    <img width='640' src="images/2022-04-23-16-15-37.png">
+</div>
 使用本地地址(注意放在本`.md`文件夹下):
 ```markdown
 [brief_introduction.md](math_mark.md)
