@@ -3,9 +3,10 @@
 ```markdown
 **加粗**   *斜体*  ~~删除线~~   ==高亮==
 ```
-**重点加粗**$\quad$*斜体*$\quad$~~删除线~~$\quad$==高亮==
-选中文字按ctrl+B粗体,ctrl+I斜体
+效果：**重点加粗**$\quad$*斜体*$\quad$~~删除线~~$\quad$==高亮==
+选中文字按`ctrl+B`粗体,`ctrl+I`斜体
 #### 列表
+```markdown
 * 无序列表
     * 嵌套列表1
     * 嵌套列表2
@@ -14,29 +15,62 @@
    1. 有序嵌套
    2. 有序嵌套
 2. 有序列表2
-   1. 快捷键 ctrl+[ 退格，ctrl+]嵌套缩进
+```
+* 无序列表
+    * 嵌套列表1
+    * 嵌套列表2
+      * 嵌套
+
+1. 有序列表
+   1. 有序嵌套
+   2. 有序嵌套
+2. 有序列表2
+
+快捷键 `ctrl+[` 退格，`ctrl+]`嵌套缩进
+
 
 任务列表
+```markdown
+- [x] 已经完成的事
+- [ ] 未完成的事
+```
 - [x] 已经完成的事
 - [ ] 未完成的事
 #### 引用和代码
 引用：
+```markdown
 > 引用别人的话
-> 就这样
-或者只打一个>符号
-退出都是两次回车
+就这样
+直到回车结束
+```
+> 引用别人的话
+就这样
+直到回车结束
 
-防止转译在符号前加反斜杠\就行，比如不加反斜杠`就是行内代码`，加了反斜杠\`就只是普通符号\`。
-行内代码用\`hello world\`格式，如`hello world`,
-代码块语法是用一对三`符号框起来，
-\```代码语言类型
-代码
+防止转译：
+```markdown
+`行内代码`
+\`不转译\`
+```
+效果：`行内代码` $\quad$ \`不转译\`
+
+代码块语法：
+>\```c++
+static int a;
 \```
-其中代码语言类型如python,java,c++等可以让代码块中的代码关键字高亮
+
+其中代码语言类型如python,java,c++等可以让代码块中的代码关键字高亮，效果：
 ```c++
 static int a;
 ```
-代码块也可显示代码行数，在语言类型后面加{.line-numbers}即可，如
+代码块也可显示代码行数，在语言类型后面加{.line-numbers}即可：
+>\```c++ {.line-numbers}
+int function(int a,int b){
+    return a+b;
+}
+\```
+
+效果：
 ```c++ {.line-numbers}
 int function(int a,int b){
     return a+b;
@@ -46,14 +80,14 @@ int function(int a,int b){
 使用如下语法插入图片或超链接
 使用网址：
 ```markdown
-[超链接名](超链接地址) eg: [b站网址](https://www.bilibili.com/)
-![图片名](图片地址) eg: 
+[b站网址](https://www.bilibili.com/) 
 ![赛罗](https://mvideopic.bdstatic.com/mvideo/25e97b57502b55996590d0156bbe03f5.jpg?for=bg)
 ```
 [b站网址](https://www.bilibili.com/)
 <div align=center>
     <img width='640' src="images/2022-04-23-16-15-37.png">
 </div>
+
 使用本地地址(注意放在本`.md`文件夹下):
 ```markdown
 [brief_introduction.md](math_mark.md)
@@ -61,6 +95,7 @@ int function(int a,int b){
 ```
 [brief_introduction.md](math_mark.md)
 ![柯南](images/柯南.jpg)
+
 为方便起见，安装了`Paste Image`插件，再按`ctrl+,`打开设置，输入`Paste Image Path`把对应的代码改成`${currentFileDir}/images`即可，之后便可使用快捷键`Ctrl+Alt+V`粘贴图片。
 为了调整图片大小和对齐，使多张图片在同一行，可以采用HTML语言：
 ```html
