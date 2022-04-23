@@ -1,3 +1,4 @@
+#! https://zhuanlan.zhihu.com/p/503790154
 [TOC]
 #### 字体
 ```markdown
@@ -81,20 +82,20 @@ int function(int a,int b){
 使用网址：
 ```markdown
 [b站网址](https://www.bilibili.com/) 
-![赛罗](https://mvideopic.bdstatic.com/mvideo/25e97b57502b55996590d0156bbe03f5.jpg?for=bg)
+![赛罗](images/Zero.png)
 ```
 [b站网址](https://www.bilibili.com/)
 <div align=center>
-    <img width='640' src="images/2022-04-23-16-15-37.png">
+    <img width='640' src="images/Zero.png">
 </div>
 
 使用本地地址(注意放在本`.md`文件夹下):
 ```markdown
 [brief_introduction.md](math_mark.md)
-![柯南](images/柯南.jpg)
+![柯南](images/Conan.jpg)
 ```
 [brief_introduction.md](math_mark.md)
-![柯南](images/柯南.jpg)
+![柯南](images/Conan.jpg)
 
 为方便起见，安装了`Paste Image`插件，再按`ctrl+,`打开设置，输入`Paste Image Path`把对应的代码改成`${currentFileDir}/images`即可，之后便可使用快捷键`Ctrl+Alt+V`粘贴图片。
 为了调整图片大小和对齐，使多张图片在同一行，可以采用HTML语言：
